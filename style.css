@@ -521,22 +521,27 @@ filter: blur(50px);
 
 .skill-bar .bar .html{
     width: 72%;
+    animation: html 2s;
 }
 
 .skill-bar .bar .css{
     width: 65%;
+    animation: css 3s;
 }
 
 .skill-bar .bar .figma{
     width: 90%;
+    animation: figma 4s;
 }
 
 .skill-bar .bar .react{
     width: 60%;
+    animation: react 6s;
 }
 
 .skill-bar .bar .flutter{
     width: 85%;
+    animation: flutter 5s;
 }
 
 
@@ -562,5 +567,59 @@ filter: blur(50px);
     }
     80%{
         border-radius:69% 31% 66% 34%/ 21% 30% 70% 79%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes figma{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes flutter{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
     }
 }
