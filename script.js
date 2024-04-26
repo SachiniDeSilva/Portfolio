@@ -68,3 +68,8 @@ currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
             
         }
  })
+
+
+ //mixed it up in protfolio section
+
+ var mixer = mixitup('.portfolio-gallery');

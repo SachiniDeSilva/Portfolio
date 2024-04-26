@@ -368,24 +368,24 @@
     </div>
     <div class="container">
         <div class="filter-buttons">
-            <button class="button">All</button>
-            <button class="button">Products</button>
-            <button class="button">Interacting</button>
-            <button class="button">Web App</button>
+            <button class="button" data-filter="all">All</button>
+            <button class="button" data-filter=".product">Products</button>
+            <button class="button" data-filter=".inter">Interacting</button>
+            <button class="button" data-filter=".web">Web App</button>
         </div>
         <div class="portfolio-gallery">
-            <div class="port-btn">
+            <div class="port-btn mix product">
                 <div class="port-image">
                     <img src="img/Mobile-App-Development_Blog-scaled.jpeg" alt="">
                 </div>
-                <div class="port-content">
+                <div class="port-content ">
                     <h3>Mobile Developer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis distinctio voluptatem aperiam enim,</p>
                     <a href="#"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
 
-            <div class="port-btn">
+            <div class="port-btn mix inter">
                 <div class="port-image">
                     <img src="img/R (1).jpg" alt="">
                 </div>
@@ -397,7 +397,7 @@
             </div>
 
 
-            <div class="port-btn">
+            <div class="port-btn mix web">
                 <div class="port-image">
                     <img src="img/R.jpg" alt="">
                 </div>
@@ -411,6 +411,7 @@
         </div>
     </div>
 </section>
+<script src="mixitup.min.js"></script>
 <script src="script.js"></script>
 
 
