@@ -633,9 +633,10 @@ filter: blur(50px);
     justify-content: center;
     align-items: center;
     border: 2px solid #fdfdfd;
+    position: relative;
 }
 
-.circle .points{
+.points{
     width: 2px;
     height: 10px;
     background-color: var(--bg-color);
@@ -650,6 +651,14 @@ filter: blur(50px);
     animation: glow 0.04s linear forwards;
     animation-delay: calc(var(--i)0.05s);
 }
+
+
+
+
+
+
+
+
 
 /*end skill*/
 .filter-buttons{

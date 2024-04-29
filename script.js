@@ -57,7 +57,7 @@ setInterval(changeText, 3000);
 
  //circle skill//
 
- // JavaScript file to generate circles with marked points based on data attributes
+// JavaScript file to generate circles with marked points based on data attributes
 // Selecting all elements with class 'circle'
 const circles = document.querySelectorAll('.circle');
 
