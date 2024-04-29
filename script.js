@@ -94,4 +94,15 @@ currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
 activeMenu();
 window.addEventListener("scroll",activeMenu);*/
 
+/*sticky navbar*/
 
+
+
+// JavaScript file to make header sticky on scroll
+// Selecting header element
+const header = document.querySelector("header");
+// Adding event listener for scroll
+window.addEventListener("scroll", function () {
+    // Toggling sticky class based on scroll position
+    header.classList.toggle("sticky", window.scrollY > 50);
+});
