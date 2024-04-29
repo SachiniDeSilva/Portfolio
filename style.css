@@ -66,6 +66,17 @@ header{
     padding: 20px 10%;
 
 }
+
+header.sticky{
+    background: var(--secon-bg-color);
+    border-bottom: 1px solid var(--secon-bg-color);
+    padding: 12px 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px var(--hover-color); /* Example box shadow */
+    z-index: 1000; /* Example z-index */
+}
 .logo{
     font-size: 26px;
     font-weight: 700;
@@ -78,6 +89,7 @@ span{
 
 .navlist{
    
+
     display: flex;
 }
 .navlist a{
@@ -732,15 +744,17 @@ padding: 10px;
 }
 /*end portfolio*/
 
-.hackathon{
+.hachathon{
     background: var(--secon-bg-color);
 }
 /*hakathon end*/
 
 /*gallery end */
+.volenteering{
+    background: var(--secon-bg-color);
+}
 
-
-
+/*end volenteering*/
 .contact{
     width: 100%;
 }
