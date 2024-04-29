@@ -160,23 +160,36 @@ section{
 
 }
 
-.chenge-text h3 .word .letter{
-    transform-origin: center center 25px;
-}
-
-.chenge-text h3 .word .letter.out{
-    transform: rotateX(90deg);
-    transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
-}
-
-.chenge-text h3 .word .letter.in{
-    transition: 0.32s ease-out;
-}
 
 
-.chenge-text h3 .word .letter.behind{
-    transform: rotateX(-90deg);
+/* CSS file for text transition effect */
+
+/* Styling for individual letters */
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+    transition: opacity 0.3s, transform 0.3s;
 }
+
+/* Styling for letters fading out */
+.letter.out {
+    opacity: 0;
+    transform: translateY(-1em);
+}
+
+/* Styling for letters behind */
+.letter.behind {
+    opacity: 0;
+    transform: translateY(0);
+}
+
+/* Styling for letters fading in */
+.letter.in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .home-content{
     color: #bdbdbd;

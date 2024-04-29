@@ -1,73 +1,93 @@
-let words =document.querySelectorAll(".word");
-words .forEach((word) => {
+
+
+// JavaScript file to animate text transition effect
+// Selecting all elements with class 'word'
+let words = document.querySelectorAll(".word");
+
+// Splitting each word into letters and wrapping them in span elements
+words.forEach((word) => {
     let letters = word.textContent.split("");
-    word.textContent ="";
-    letters.forEach((letter)=>{
+    word.textContent = "";
+    letters.forEach((letter) => {
         let span = document.createElement("span");
-        span.textContent =letter;
-        span.className ="letter";
+        span.textContent = letter;
+        span.className = "letter";
         word.append(span);
     });
-    
 });
 
-let currentWordIndex =0;
-let maxWordIndex = words.length -1;
+let currentWordIndex = 0;
+let maxWordIndex = words.length - 1;
 
-words[currentWordIndex].style.opacity ="1";
+// Setting initial opacity for first word
+words[currentWordIndex].style.opacity = "1";
 
-let changeText =()=>{
+// Function to change text with transition effect
+let changeText = () => {
     let currentWord = words[currentWordIndex];
-    let nextWord = currentWordIndex === maxWordIndex ? words[0]: words[currentWordIndex];
+    let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
 
-    Array.from(currentWord.children).forEach((letter,i)=>{
-        setTimeout(()=>{
-            letter.className ="letter out";
-        },i*80);
+    // Fading out letters of current word
+    Array.from(currentWord.children).forEach((letter, i) => {
+        setTimeout(() => {
+            letter.className = "letter out";
+        }, i * 80);
     });
 
-    nextWord.style.opacity ="1";
-    Array.from(nextWord.children).forEach((letter,i)=>{
-        letter.className ="letter behind";
-        setTimeout(()=>{
-            letter.className ="letter in";
-
-        },340+i*80);
+    // Fading in letters of next word
+    nextWord.style.opacity = "1";
+    Array.from(nextWord.children).forEach((letter, i) => {
+        letter.className = "letter behind";
+        setTimeout(() => {
+            letter.className = "letter in";
+        }, 340 + i * 80);
     });
-currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+
+    // Updating current word index
+    currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
 }
- changeText();
- setInterval(changeText, 3000)
 
+// Initial call to change text
+changeText();
 
+// Setting interval to change text every 3 seconds
+setInterval(changeText, 3000);
 
 
 
  //circle skill//
 
- const circles = document.querySelectorAll('.circle');
- circles.forEach(elem=>{
+ // JavaScript file to generate circles with marked points based on data attributes
+// Selecting all elements with class 'circle'
+const circles = document.querySelectorAll('.circle');
+
+// Iterating over each circle element
+circles.forEach(elem => {
+    // Getting data attributes
     var dots = elem.getAttribute("data-dots");
-    var marked =elem.getAttribute("data-percent");
-    var percent = Math.floor(dots*marked/100);
-    var points ="";
-    var rotate = 360/dots;
+    var marked = elem.getAttribute("data-percent");
+    // Calculating percentage
+    var percent = Math.floor(dots * marked / 100);
+    var points = "";
+    var rotate = 360 / dots;
 
-
+    // Generating points inside circle
     for (let i = 0; i < dots; i++) {
-        
-        points += '<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>';
-        
+        points += '<div class="points" style="--i:' + i + '; --rot:' + rotate + 'deg"></div>';
     }
 
+    // Adding points to circle element
     elem.innerHTML = points;
-        const pointsMarked =elem.querySelectorAll('.points');
 
-        for (let i = 0; i < percent; i++) {
-            pointsMarked[i].classList.add('marked');
-            
-        }
- })
+    // Selecting marked points
+    const pointsMarked = elem.querySelectorAll('.points');
+
+    // Marking points up to specified percentage
+    for (let i = 0; i < percent; i++) {
+        pointsMarked[i].classList.add('marked');
+    }
+});
+
 
 
  //mixed it up in protfolio section
