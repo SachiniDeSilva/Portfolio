@@ -76,23 +76,26 @@ currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
 
  //active menu
 
- /*let menuLi = document.querySelectorAll('header ul li a');
- let section = document.querySelectorAll('section');
+// JavaScript file to handle active menu item based on scroll position
+// Selecting menu items and sections
+let menuLi = document.querySelectorAll('header ul li a');
+let sections = document.querySelectorAll('section');
 
-
-
-
- function activeMenu(e){
-    let len =section.length;
-    while (--len && window.scrollY + 97 < section[len].offTop){} 
-    menuLi.forEach(sec => sec.classList.remove("active"));
+// Function to set active menu item
+function setActiveMenu() {
+    let len = sections.length;
+    while (--len && window.scrollY + 97 < sections[len].offsetTop) {} // Finding the section in view
+    // Removing active class from all menu items
+    menuLi.forEach(item => item.classList.remove("active"));
+    // Adding active class to the corresponding menu item
     menuLi[len].classList.add("active");
-    
-        
-    
- }
-activeMenu();
-window.addEventListener("scroll",activeMenu);*/
+}
+
+// Initial call to set active menu item
+setActiveMenu();
+
+// Adding event listener for scroll to update active menu item
+window.addEventListener("scroll", setActiveMenu);
 
 /*sticky navbar*/
 
