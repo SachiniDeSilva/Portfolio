@@ -767,7 +767,64 @@ padding: 10px;
 /*end portfolio*/
 
 .hachathon{
+   /* display: flex;
+    align-items: center;
+    justify-content: center;*/
     background: var(--secon-bg-color);
+}
+
+.card-container{
+    padding: block 5rem; ;
+}
+
+.card-content{
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-color: black;
+}
+
+.card-article{
+    width: 300px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card-image{
+    position: relative;
+    background-color: var(--hover-color);
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+}
+
+.card-data{
+    background-color: #292e33;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.card-img{
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+   
+}
+.card-shadow{
+    width: 200px;
+    height: 200px;
+    background-color: var(--secon-bg-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    filter: blur(45px);
+
 }
 /*hakathon end*/
 
