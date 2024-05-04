@@ -781,7 +781,7 @@ padding: 10px;
     margin-inline: 1.75rem;
     border-radius: 1.25rem;
     overflow: hidden;
-    background-color: black;
+    background-color: var(--secon-bg-color);
 }
 
 .card-article{
@@ -825,6 +825,32 @@ padding: 10px;
     margin-inline: auto;
     filter: blur(45px);
 
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+.swiper-button-next,
+.swiper-button-prev{
+width: initial;
+height: initial;
+font-size: 3rem;
+color: var(--hover-color);
+display: none;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #bdbdbd;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #ebd80a;
 }
 /*hakathon end*/
 
@@ -991,4 +1017,28 @@ footer a i{
         background: var(--hover-color);
         box-shadow: var(--neon-box-shadow);
     }
+}
+
+@media screen and (max-width:320px){
+    .card-data{
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .card-content{
+        margin-inline:3rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: block;
+    }
+    
+}
+@media screen and (min-width:1120px){
+    .card-container{
+        max-width: 1120px;
+      
+    }
+    
 }
