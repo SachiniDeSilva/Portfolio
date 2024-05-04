@@ -140,6 +140,8 @@ let swiperCards = new Swiper('.card-content', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable:true,
+      dynamicBullets:true,
     },
   
     // Navigation arrows
@@ -148,5 +150,13 @@ let swiperCards = new Swiper('.card-content', {
       prevEl: '.swiper-button-prev',
     },
   
-   
+    breakpoints: {
+        600: {
+            slidesPerView: 2,
+        },
+        968: {
+            slidesPerView: 3,
+        },
+    }
+    
   });
