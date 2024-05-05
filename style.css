@@ -766,6 +766,10 @@ padding: 10px;
 }
 /*end portfolio*/
 
+
+
+
+
 .hachathon{
    /* display: flex;
     align-items: center;
@@ -858,6 +862,13 @@ display: none;
     background-color: #ebd80a;
 }
 /*hakathon end*/
+
+
+
+
+
+
+
 
 /*gallery end */
 .volenteering{
@@ -1023,6 +1034,13 @@ footer a i{
         box-shadow: var(--neon-box-shadow);
     }
 }
+
+
+
+
+
+
+
 
 @media screen and (max-width:320px){
     .card-data{
