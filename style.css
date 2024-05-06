@@ -912,8 +912,55 @@ display: none;
     transition: 0.7s ease;
 }
 .detail{
-    
+    position: absolute;
+    bottom: 43px;
+    left: 43px;
 }
+.detail h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #dbdbdb;
+    transition: 0.7s ease;
+    display: none;
+}
+
+.detail p{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 33px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #dbdbdb;
+    transition: 0.7s ease;
+    display: none;
+}
+.slider-img.active {
+    width: 766px !important;
+    height: 750px !important;
+}
+
+.slider-img.active h1 {
+    display: none;
+}
+
+.slider-img .active .detail p,
+.slider-img .active .detail h2 {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
 
 
 
