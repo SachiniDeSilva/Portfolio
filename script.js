@@ -160,3 +160,19 @@ let swiperCards = new Swiper('.card-content', {
     }
     
   });
+
+
+
+
+
+
+
+
+  /*jQuary*/
+
+  jQuery(document).ready(function($){
+    $('.slider-img').on('click', function(){ // Fix: Added dot before 'slider-img'
+        $('.slider-img').removeClass('active');
+        $(this).addClass('active'); // Fix: Corrected method name to 'addClass'
+    });
+});
