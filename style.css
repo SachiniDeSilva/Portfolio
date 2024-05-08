@@ -215,16 +215,15 @@ section{
     color: #dbdbdb;
 }
 
-.btn-box{
+.btn-box {
     display: flex;
     justify-content: space-between;
     width: 320px;
     height: 45px;
-    cursor: pointer;
 }
 
-.btn-box .btn{
-    display: inline-flex;
+.btn {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 150px;
@@ -234,48 +233,50 @@ section{
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
-    transition: .6s;
+    transition: 0.6s;
     box-shadow: var(--neon-box-shadow);
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    z-index: -1;
     border: 2px solid var(--hover-color);
-
 }
 
-.btn:hover{
-    color: var(--hover-color);
+.btn:hover {
+    background: var(--bg-color);
+    color: #ffffff; /* Change text color to white on hover */
 }
 
-.btn::before{
+.btn::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--bg-color);
+    background: var(--bg-color); /* Change background color to var(--bg-color) */
     width: 0;
     height: 100%;
-    z-index: -1;
-    transition: .4s;
+    transition: 0.4s;
 }
 
-.btn:hover::before{
+.btn:hover::before {
     width: 100%;
-
 }
-.btn:nth-child(2){
+
+.btn:nth-child(2) {
     background: var(--bg-color);
     color: var(--hover-color);
 }
 
-.btn:nth-child(2):hover{
-    color: var(--bg-color);
+.btn:nth-child(2):hover {
+    background: var(--hover-color); /* Change background color to var(--hover-color) on hover */
+    color: #ffffff; /* Change text color to white on hover */
 }
 
-.btn:nth-child(2)::before{
+.btn:nth-child(2)::before {
     background: var(--hover-color);
+    color: #dbdbdb;
 }
+
+
 
 .social-icons{
     margin-top: 8rem;

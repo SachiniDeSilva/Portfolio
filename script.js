@@ -184,3 +184,10 @@ let swiperCards = new Swiper('.card-content', {
         $(this).addClass('active'); // Fix: Corrected method name to 'addClass'
     });
 });
+
+
+
+/*email send*/
+
+
+
