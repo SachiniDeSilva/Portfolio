@@ -166,7 +166,7 @@
         <h2>About me</h2>
         <h3>A story of good</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic accusamus omnis nisi voluptas totam quibusdam asperiores dolorum doloribus, labore iure, natus quaerat corporis quasi soluta perspiciatis harum, optio temporibus?</p>
-    <div class="btn-b">
+    <div class="btn-box">
             <a href="#" class="btn">Read More!</a>
 
         </div>
@@ -641,6 +641,62 @@
         <span>me as a volenteer</span>
         <h2>Volenteering</h2>
     </div>
+
+    <div class="container">
+        
+        <div class="portfolio-gallery">
+            <div class="port-btn mix product">
+                <div class="port-image">
+                    <img src="img/Mobile-App-Development_Blog-scaled.jpeg" alt="">
+                </div>
+                <div class="port-content ">
+                    <h3>Mobile Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Accusamus corporis distinctio voluptatem aperiam enim,</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="port-btn mix inter">
+                <div class="port-image">
+                    <img src="img/R (1).jpg" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>Web Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+
+            <div class="port-btn mix web">
+                <div class="port-image">
+                    <img src="img/R.jpg" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corporis distinctio voluptatem aperiam enim,</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 <!--volenteering section end -->
 
@@ -649,12 +705,18 @@
         <span>ask me question</span>
         <h2>Contact Me!</h2>
     </div>
-    <form action="#">
-        <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="your Email">
-        <input type="text" placeholder="your Address">
-        <input type="text" placeholder="Phone Number">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <form action="https://api.web3forms.com/submit" method="POST" >
+
+
+
+
+        <input type="hidden" name="access_key" value="fab8e7cc-c8a0-41ba-8001-79fdd273d4cf">
+        <input type="text"  name="name"  id="name" placeholder="Your Name" required>
+        <input type="text" name="email"  id="email"  placeholder="your Email" required>
+        <input type="text" name="number"  id="number"  placeholder="Contact Number" required>
+        
+        
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
         <div class="btn-box formBtn">
             <button type="submit" class="btn">Send</button>
         </div>
@@ -669,6 +731,14 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 <script defer src="script.js"></script>
 <script src="swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+
 
 
 
