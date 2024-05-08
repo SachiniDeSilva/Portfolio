@@ -129,6 +129,14 @@ window.addEventListener("scroll", function () {
     // Toggling sticky class based on scroll position
     header.classList.toggle("sticky", window.scrollY > 50);
 });
+
+
+
+
+
+
+
+
  /*swapper js*/
 
 let swiperCards = new Swiper('.card-content', {
