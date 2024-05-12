@@ -216,29 +216,3 @@ window.onclick = (event) => {
 
 
 
-/*info-about*/
-
-// Get references to the elements
-let info1 = document.querySelector(".info-about1");
-let info2 = document.querySelector(".info-about2");
-let info3 = document.querySelector(".info-about3");
-
-// Function to show the element
-function showInfo(element) {
-    element.style.display = "block";
-}
-
-// Function to hide the element
-function hideInfo(element) {
-    element.style.display = "none";
-}
-
-
-
-// Example of hiding info2
-hideInfo(info2);
-hideInfo(info1);
-hideInfo(info3);
-
-
-

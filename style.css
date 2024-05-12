@@ -244,7 +244,7 @@ section{
 
 .btn:hover {
     background: var(--bg-color);
-    color: #ffffff; /* Change text color to white on hover */
+    color: var(--hover-color); 
 }
 
 .btn::before {
@@ -252,7 +252,7 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--bg-color); /* Change background color to var(--bg-color) */
+    background: var(--bg-color); 
     width: 0;
     height: 100%;
     transition: 0.4s;
@@ -268,13 +268,13 @@ section{
 }
 
 .btn:nth-child(2):hover {
-    background: var(--hover-color); /* Change background color to var(--hover-color) on hover */
-    color: #ffffff; /* Change text color to white on hover */
+    background: var(--hover-color);
+    color: #ffffff; 
 }
 
 .btn:nth-child(2)::before {
     background: var(--hover-color);
-    color: #dbdbdb;
+    
 }
 
 
