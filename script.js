@@ -187,7 +187,58 @@ let swiperCards = new Swiper('.card-content', {
 
 
 
-/*email send*/
+/*toggle*/
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x");
+    navlist.classList.toggle("open");
+}
+
+// Prevent closing the menu when clicking inside the menu itself
+navlist.onclick = (event) => {
+    event.stopPropagation();
+}
+
+// Close the menu when clicking outside of it
+window.onclick = (event) => {
+    if (!event.target.matches('#menu-icon')) {
+        menuIcon.classList.remove("bx-x");
+        navlist.classList.remove("open");
+    }
+}
+
+
+
+
+
+
+
+
+/*info-about*/
+
+// Get references to the elements
+let info1 = document.querySelector(".info-about1");
+let info2 = document.querySelector(".info-about2");
+let info3 = document.querySelector(".info-about3");
+
+// Function to show the element
+function showInfo(element) {
+    element.style.display = "block";
+}
+
+// Function to hide the element
+function hideInfo(element) {
+    element.style.display = "none";
+}
+
+
+
+// Example of hiding info2
+hideInfo(info2);
+hideInfo(info1);
+hideInfo(info3);
 
 
 
