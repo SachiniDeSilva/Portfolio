@@ -187,7 +187,32 @@ let swiperCards = new Swiper('.card-content', {
 
 
 
-/*email send*/
+/*toggle*/
+let menuIcon = document.querySelector("#menu-icon");
+let navlist = document.querySelector(".navlist");
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x");
+    navlist.classList.toggle("open");
+}
+
+// Prevent closing the menu when clicking inside the menu itself
+navlist.onclick = (event) => {
+    event.stopPropagation();
+}
+
+// Close the menu when clicking outside of it
+window.onclick = (event) => {
+    if (!event.target.matches('#menu-icon')) {
+        menuIcon.classList.remove("bx-x");
+        navlist.classList.remove("open");
+    }
+}
+
+
+
+
+
 
 
 
