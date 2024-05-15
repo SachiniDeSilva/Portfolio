@@ -187,6 +187,11 @@ let swiperCards = new Swiper('.card-content', {
 
 
 
+
+
+
+
+
 /*toggle*/
 let menuIcon = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
