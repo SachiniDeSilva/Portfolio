@@ -942,8 +942,8 @@ display: none;
     display: none;
 }
 .slider-img.active {
-    width: 766px !important;
-    height: 750px !important;
+    width: 100% !important;
+    height: auto !important;
 }
 
 .slider-img.active h1 {
