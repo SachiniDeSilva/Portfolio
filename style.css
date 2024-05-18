@@ -570,12 +570,12 @@ filter: blur(50px);
 }
 
 .skill-bar .bar .html{
-    width: 72%;
+    width: 90%;
     animation: html 2s;
 }
 
 .skill-bar .bar .css{
-    width: 65%;
+    width: 80%;
     animation: css 3s;
 }
 
@@ -585,11 +585,30 @@ filter: blur(50px);
 }
 
 .skill-bar .bar .react{
-    width: 60%;
+    width: 70%;
     animation: react 6s;
 }
 
 .skill-bar .bar .flutter{
+    width: 85%;
+    animation: flutter 5s;
+}
+
+.skill-bar .bar .java{
+    width: 65%;
+    animation: flutter 5s;
+}
+
+.skill-bar .bar .mysql{
+    width: 80%;
+    animation: flutter 5s;
+}
+.skill-bar .bar .python{
+    width: 70%;
+    animation: flutter 5s;
+}
+
+.skill-bar .bar .firebase{
     width: 85%;
     animation: flutter 5s;
 }
@@ -889,70 +908,28 @@ display: none;
     transition: 0.7s ease;
 }
 .slider-image .slider-img:first-child, .slider-image .slider-img:last-child{
-    height: 480px;
+    height: 380px;
 }
 
 
-.slider-image .slider-img:nth-child(2), .slider-image .slider-img:nth-child(6){
-    height: 560px;
+.slider-image .slider-img:nth-child(2), .slider-image .slider-img:nth-child(10){
+    height: 460px;
 }
 
-.slider-image .slider-img:nth-child(3), .slider-image .slider-img:nth-child(4) , .slider-image .slider-img:nth-child(5){
+.slider-image .slider-img:nth-child(3), .slider-image .slider-img:nth-child(9) {
+    height: 565px;
+}
+.slider-image .slider-img:nth-child(4), .slider-image .slider-img:nth-child(8)  {
     height: 665px;
 }
 
-.slider-image h1{
-    font-size: 40px;
-    font-weight: 700;
-    text-align: left;
-    text-transform: uppercase;
-    color: #dbdbdb;
-    position: absolute;
-    top: 50%;
-    left: -10%;
-    transform: rotate(270deg);
-    transition: 0.7s ease;
-}
-.detail{
-    position: absolute;
-    bottom: 43px;
-    left: 43px;
-}
-.detail h2{
-    font-size: 26px;
-    font-weight: 700;
-    text-align: left;
-    line-height: 44px;
-    text-align: left;
-    text-transform: uppercase;
-    color: #dbdbdb;
-    transition: 0.7s ease;
-    display: none;
+.slider-image .slider-img:nth-child(5), .slider-image .slider-img:nth-child(6),.slider-image .slider-img:nth-child(7)  {
+    height: 695px;
 }
 
-.detail p{
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    line-height: 33px;
-    text-align: left;
-    text-transform: uppercase;
-    color: #dbdbdb;
-    transition: 0.7s ease;
-    display: none;
-}
 .slider-img.active {
     width: 100% !important;
     height: auto !important;
-}
-
-.slider-img.active h1 {
-    display: none;
-}
-
-.slider-img .active .detail p,
-.slider-img .active .detail h2 {
-    display: block;
 }
 
 
@@ -1074,7 +1051,7 @@ footer a i{
         width: 0%;
     }
     100%{
-        width: 72%;
+        width: 90%;
     }
 }
 
@@ -1083,7 +1060,7 @@ footer a i{
         width: 0%;
     }
     100%{
-        width: 65%;
+        width: 80%;
     }
 }
 
@@ -1105,21 +1082,48 @@ footer a i{
     }
 }
 
+
+@keyframes firebase{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
 @keyframes react{
     0%{
         width: 0%;
     }
     100%{
-        width: 60%;
+        width: 70%;
     }
 }
 
-@keyframes html{
+@keyframes mysql{
     0%{
         width: 0%;
     }
     100%{
-        width: 72%;
+        width: 80%;
     }
 }
 
