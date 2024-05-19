@@ -381,6 +381,9 @@ filter: blur(50px);
     font-weight: 200;
     letter-spacing: 2px;
     text-transform:uppercase ;
+    padding-left: 20%;
+    margin-top: 2rem;
+  
 
 }
 
@@ -388,6 +391,7 @@ filter: blur(50px);
     color: var(--hover-color);
     font-weight: 700;
     font-size: var(--norma-font);
+    padding-left: 20%;
 }
 
 .about-content h3{
