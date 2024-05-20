@@ -179,11 +179,17 @@ let swiperCards = new Swiper('.card-content', {
   /*jQuary*/
 
   jQuery(document).ready(function($){
-    $('.slider-img').on('click', function(){ // Fix: Added dot before 'slider-img'
+    // Ensure only the 6th image has the 'active' class initially
+    $('.slider-img').removeClass('active');
+    $('.slider-img').eq(5).addClass('active'); // eq(5) selects the 6th image (0-based index)
+
+    $('.slider-img').on('click', function(){
         $('.slider-img').removeClass('active');
-        $(this).addClass('active'); // Fix: Corrected method name to 'addClass'
+        $(this).addClass('active');
     });
 });
+
+
 
 
 

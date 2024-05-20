@@ -216,6 +216,7 @@ section{
     color: #dbdbdb;
 }
 
+
 .btn-box {
     display: flex;
     justify-content: space-between;
@@ -243,8 +244,8 @@ section{
 }
 
 .btn:hover {
-    background: var(--bg-color);
-    color: var(--hover-color); 
+    background: var(--hover-bg-color); /* Change to black */
+    color: var(--hover-color); /* Change font color to yellow */
 }
 
 .btn::before {
@@ -260,6 +261,7 @@ section{
 
 .btn:hover::before {
     width: 100%;
+    background: var(--hover-bg-color); /* Change to black */
 }
 
 .btn:nth-child(2) {
@@ -268,16 +270,13 @@ section{
 }
 
 .btn:nth-child(2):hover {
-    background: var(--hover-color);
-    color: #ffffff; 
+    background: var(--hover-color); /* Change to black */
+    color: var(bg); /* Change font color to yellow */
 }
 
 .btn:nth-child(2)::before {
-    background: var(--hover-color);
-    
+    background: var(--hover-bg-color); /* Change to black */
 }
-
-
 
 
  label.btn{
@@ -912,6 +911,9 @@ padding: 10px;
     text-align: center;
     position: relative;
     z-index: 10;
+}
+.card-data .btn-box{
+    padding-left: 35px;
 }
 
 .card-img{
