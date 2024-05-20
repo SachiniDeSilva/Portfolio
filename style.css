@@ -271,7 +271,7 @@ section{
 
 .btn:nth-child(2):hover {
     background: var(--hover-color); /* Change to black */
-    color: var(bg); /* Change font color to yellow */
+    color: var(--bg-color); /* Change font color to yellow */
 }
 
 .btn:nth-child(2)::before {
@@ -913,7 +913,7 @@ padding: 10px;
     z-index: 10;
 }
 .card-data .btn-box{
-    padding-left: 35px;
+    padding-left: 45px;
 }
 
 .card-img{
