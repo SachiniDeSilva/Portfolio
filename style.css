@@ -279,6 +279,69 @@ section{
 
 
 
+
+ label.btn{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 45px;
+}
+
+label .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--hover-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--hover-color);
+}
+
+label .btn:hover {
+    background: var(--bg-color);
+    color: var(--hover-color); 
+}
+
+label .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bg-color); 
+    width: 0;
+    height: 100%;
+    transition: 0.4s;
+}
+
+label.btn:hover::before {
+    width: 100%;
+}
+
+label.btn:nth-child(2) {
+    background: var(--bg-color);
+    color: var(--hover-color);
+}
+
+label.btn:nth-child(2):hover {
+    background: var(--hover-color);
+    color: #ffffff; 
+}
+
+label.btn:nth-child(2)::before {
+    background: var(--hover-color);
+    
+}
+
+
 .social-icons{
     margin-top: 8rem;
     display: flex;
@@ -448,7 +511,20 @@ filter: blur(50px);
     align-items: center;
     font-size: .6rem;
 }
+#ch{
+    display: none;
 
+}
+#ch:checked ~ .readmore{
+display: block;
+}
+.readmore{
+    display: none;
+}
+
+#ch:checked ~ label{
+    display: none;
+}
 /*end about*/
 .main-text{
     width: 100%;
