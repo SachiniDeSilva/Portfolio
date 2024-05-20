@@ -216,6 +216,7 @@ section{
     color: #dbdbdb;
 }
 
+
 .btn-box {
     display: flex;
     justify-content: space-between;
@@ -243,8 +244,8 @@ section{
 }
 
 .btn:hover {
-    background: var(--bg-color);
-    color: var(--hover-color); 
+    background: var(--hover-bg-color); /* Change to black */
+    color: var(--hover-color); /* Change font color to yellow */
 }
 
 .btn::before {
@@ -260,6 +261,7 @@ section{
 
 .btn:hover::before {
     width: 100%;
+    background: var(--hover-bg-color); /* Change to black */
 }
 
 .btn:nth-child(2) {
@@ -268,15 +270,75 @@ section{
 }
 
 .btn:nth-child(2):hover {
+    background: var(--hover-color); /* Change to black */
+    color: var(--bg-color); /* Change font color to yellow */
+}
+
+.btn:nth-child(2)::before {
+    background: var(--hover-bg-color); /* Change to black */
+}
+
+
+ label.btn{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 45px;
+}
+
+label .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--hover-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--hover-color);
+}
+
+label .btn:hover {
+    background: var(--bg-color);
+    color: var(--hover-color); 
+}
+
+label .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bg-color); 
+    width: 0;
+    height: 100%;
+    transition: 0.4s;
+}
+
+label.btn:hover::before {
+    width: 100%;
+}
+
+label.btn:nth-child(2) {
+    background: var(--bg-color);
+    color: var(--hover-color);
+}
+
+label.btn:nth-child(2):hover {
     background: var(--hover-color);
     color: #ffffff; 
 }
 
-.btn:nth-child(2)::before {
+label.btn:nth-child(2)::before {
     background: var(--hover-color);
     
 }
-
 
 
 .social-icons{
@@ -448,7 +510,20 @@ filter: blur(50px);
     align-items: center;
     font-size: .6rem;
 }
+#ch{
+    display: none;
 
+}
+#ch:checked ~ .readmore{
+display: block;
+}
+.readmore{
+    display: none;
+}
+
+#ch:checked ~ label{
+    display: none;
+}
 /*end about*/
 .main-text{
     width: 100%;
@@ -836,6 +911,9 @@ padding: 10px;
     text-align: center;
     position: relative;
     z-index: 10;
+}
+.card-data .btn-box{
+    padding-left: 45px;
 }
 
 .card-img{
