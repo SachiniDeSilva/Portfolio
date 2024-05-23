@@ -550,7 +550,7 @@ display: block;
     align-items: center;
     flex-wrap: wrap;
     grid: gap 2rem;
-   /* background: var(--secon-bg-color);*/
+    background: var(--secon-bg-color);
 }
 
 .section-services .services-box{
@@ -692,11 +692,20 @@ display: block;
     animation: flutter 5s;
 }
 
+
+
+
+/*hire me*/
+
+.hireme{
+    background: var(--secon-bg-color);
+}
 /*professional*/
 
 .professional{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: var(se);
 
 }
 .box{
