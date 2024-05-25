@@ -1050,6 +1050,47 @@ display: none;
     border-radius: 50%;
     border: 3px solid var(--bg-color);
 }
+.cards{
+    border-radius: 20px;
+    background: var(--bg-color);
+    position: relative;
+    margin: 20px 0;
+    width: 280px;
+}
+.cards::before{
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    background: var(--hover-color);
+    border-radius: 20px 20px 0 0 ;
+}
+.cards .card-contents{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.cards .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #bdbdbd;
+}
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #bdbdbd;
+}
+.name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+    color: #bdbdbd;
+}
+
 /*end volenteering*/
 .contact{
     width: 100%;
