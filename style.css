@@ -694,12 +694,6 @@ display: block;
 
 
 
-
-/*hire me*/
-
-.hireme{
-    background: var(--secon-bg-color);
-}
 /*professional*/
 
 .professional{
@@ -1042,6 +1036,20 @@ display: none;
     background: var(--secon-bg-color);
 }
 
+.cards .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: var(--hover-color);
+}
+.cards .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--bg-color);
+}
 /*end volenteering*/
 .contact{
     width: 100%;
