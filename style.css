@@ -347,6 +347,7 @@ label.btn:nth-child(2)::before {
     justify-content: space-between;
     width: 220px;
     height: 40px;
+    gap: 20px;
 }
 .social-icons a{
     display: inline-flex;
@@ -946,27 +947,38 @@ padding: 10px;
     display: none;
 }
 .swiper-button-next,
-.swiper-button-prev{
-width: initial;
-height: initial;
-font-size: 3rem;
-color: var(--hover-color);
-display: none;
+.swiper-button-prev {
+    width: auto; /* Make sure width is appropriate */
+    height: auto; /* Make sure height is appropriate */
+    font-size: 3rem;
+    color: var(--hover-color); /* Sets the color to hover color */
+    display: flex; /* Ensure the buttons are displayed as flex */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center the icon */
+    background: transparent; /* Ensure background is transparent */
+    border: none; /* Remove any border */
+    cursor: pointer; /* Add a pointer cursor on hover */
 }
-
-.swiper-button-prev{
+.swiper-button-prev i {
+    color: #ebd80a;
+}
+.swiper-button-next i {
+    color: #ebd80a;
+}
+.swiper-button-prev {
     left: 0;
 }
-.swiper-button-next{
+.swiper-button-next {
     right: 0;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     background-color: #bdbdbd;
     opacity: 1;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     background-color: #ebd80a;
 }
+
 /*hakathon end*/
 
 
@@ -1090,6 +1102,10 @@ display: none;
     font-weight: 500;
     color: #bdbdbd;
 }
+
+
+
+
 
 /*end volenteering*/
 .contact{
