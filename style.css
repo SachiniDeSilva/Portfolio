@@ -347,6 +347,7 @@ label.btn:nth-child(2)::before {
     justify-content: space-between;
     width: 220px;
     height: 40px;
+    gap: 20px;
 }
 .social-icons a{
     display: inline-flex;
@@ -1090,6 +1091,10 @@ display: none;
     font-weight: 500;
     color: #bdbdbd;
 }
+
+
+
+
 
 /*end volenteering*/
 .contact{
