@@ -551,7 +551,7 @@ display: block;
     align-items: center;
     flex-wrap: wrap;
     grid: gap 2rem;
-    background: var(--secon-bg-color);
+
 }
 
 .section-services .services-box{
@@ -562,6 +562,7 @@ display: block;
     transition: transform .4s;
     border-radius: 10px;
     margin: 10px;
+    gap: 8px;
 }
 .services-box .btn-box{
     width: auto;
