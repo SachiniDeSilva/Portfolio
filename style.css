@@ -1048,6 +1048,11 @@ padding: 10px;
 .volenteering{
     background: var(--secon-bg-color);
 }
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to a new line if there's not enough space */
+    gap: 20px; /* Sets the gap between the cards */
+}
 
 .cards .image{
     height: 140px;
@@ -1068,7 +1073,10 @@ padding: 10px;
     background: var(--bg-color);
     position: relative;
     margin: 20px 0;
-    width: 280px;
+    width: 200px;
+   height: 300px;
+    box-shadow: var(--neon-box-shadow);
+
 }
 .cards::before{
     content: "";
