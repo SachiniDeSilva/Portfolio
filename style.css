@@ -886,7 +886,7 @@ padding: 10px;
 }
 
 .card-container{
-    padding: block 5rem; ;
+    padding: block 5rem; 
 }
 
 .card-content{
@@ -1076,8 +1076,8 @@ padding: 10px;
     background: var(--bg-color);
     position: relative;
     margin: 20px 0;
-    width: 220px;
-   height: 300px;
+    width: 250px;
+   height: 320px;
     box-shadow: var(--neon-box-shadow);
 
 }
