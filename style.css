@@ -1081,6 +1081,7 @@ padding: 10px;
     width: 250px;
    height: 320px;
     box-shadow: var(--neon-box-shadow);
+    transition: transform .4s;
 
 }
 .cards::before{
@@ -1123,7 +1124,9 @@ padding: 10px;
     color: #ffffff;
 }
 
-
+.cards:hover{
+    transform: translateY(-.7rem);
+}
 
 
 /*end volenteering*/
