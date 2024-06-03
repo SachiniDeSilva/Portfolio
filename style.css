@@ -390,19 +390,21 @@ label.btn:nth-child(2)::before {
 
 .home-image{
     position: relative;
+    
 }
 
 .img-box{
     text-align: center;
 }
 
-/*.img-box img{
+.img-box img{
     padding-top: 0px;
     width: auto;
     max-width: 450px;
     height: auto;
+  
     
-}*/
+}
 
 .liquid-shape{
     position: absolute;
@@ -436,6 +438,7 @@ filter: blur(50px);
     padding-bottom: 0%;
     max-width: 500px;
     height: auto;
+    filter: drop-shadow(5px 10px 10px rgba(248, 245, 245, 0.6));
 }
 
 .about-content span{
