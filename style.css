@@ -448,7 +448,8 @@ filter: blur(50px);
     letter-spacing: 2px;
     text-transform:uppercase ;
     padding-left: 20%;
-    margin-top: 2rem;
+    margin-top: 1rem;
+   
   
 
 }
@@ -458,6 +459,7 @@ filter: blur(50px);
     font-weight: 700;
     font-size: var(--norma-font);
     padding-left: 20%;
+   
 }
 
 .about-content h3{
@@ -1107,14 +1109,19 @@ padding: 10px;
 .name-profession .name{
     font-size: 20px;
     font-weight: 600;
-    color: #bdbdbd;
+    color: #f7f3f3;
+    text-align: center;
 }
 .name-profession .profession{
     font-size: 15px;
     font-weight: 500;
     color: #bdbdbd;
+    text-align: center;
 }
-
+.name-profession .date{
+    font-size: 15px;
+    color: #ffffff;
+}
 
 
 
