@@ -413,8 +413,8 @@ label.btn:nth-child(2)::before {
 
 .liquid-shape{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
     z-index: -1;
     top: 5%;
 }
@@ -539,6 +539,62 @@ display: block;
     list-style-type: disc;
 }
 /*end about*/
+
+.hire-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid: gap 2rem;
+ 
+    
+
+}
+.hire-section .hire-box{
+    flex: 1 1 18rem;
+    padding: 5rem 1rem 2rem;
+    text-align: left;
+   background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+    margin: 10px;
+    gap: 8px;
+    box-shadow: var(--neon-box-shadow);
+    
+}
+.hire-box h3{
+    font-size: 25px;
+    padding-top: 1%;
+}
+
+.hire-box p{
+    padding-top: 2%;
+    width: 90%;
+}
+.hire-box .btn-box{
+   
+    width: auto;
+    justify-content: center;
+}
+.hire-img{
+    position: absolute;
+    top:226% ;
+    left: 69%;
+
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.hire-img img{
+    height: auto;
+    width: 75%;
+    filter: drop-shadow(5px 10px 10px rgba(246, 246, 77, 0.6));
+    
+   
+  
+}
+
+/*end hireme*/
 .main-text{
     width: 100%;
     text-align: center;
