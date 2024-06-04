@@ -395,27 +395,32 @@ label.btn:nth-child(2)::before {
 
 .img-box{
     text-align: center;
+    padding-top: 10%;
+
 }
+       
 
 .img-box img{
     padding-top: 0px;
     width: auto;
     max-width: 450px;
-    height: auto;
+    height: auto; 
   
-    
 }
+
+
+
 
 .liquid-shape{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
     z-index: -1;
-    top: 10%;
+    top: 5%;
 }
 
 .liquid-shape:nth-child(2){
-filter: blur(50px);
+filter: blur(75px);
 }
 
 /*home section end*/
@@ -530,7 +535,66 @@ display: block;
 #ch:checked ~ label{
     display: none;
 }
+.readmore p ul{
+    list-style-type: disc;
+}
 /*end about*/
+
+.hire-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid: gap 2rem;
+ 
+    
+
+}
+.hire-section .hire-box{
+    flex: 1 1 18rem;
+    padding: 5rem 1rem 2rem;
+    text-align: left;
+   background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+    margin: 10px;
+    gap: 8px;
+    box-shadow: var(--neon-box-shadow);
+    
+}
+.hire-box h3{
+    font-size: 25px;
+    padding-top: 1%;
+}
+
+.hire-box p{
+    padding-top: 2%;
+    width: 90%;
+}
+.hire-box .btn-box{
+   
+    width: auto;
+    justify-content: center;
+}
+.hire-img{
+    position: absolute;
+    top:226% ;
+    left: 69%;
+
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.hire-img img{
+    height: auto;
+    width: 75%;
+    filter: drop-shadow(5px 10px 10px rgba(246, 246, 77, 0.6));
+    
+   
+  
+}
+
+/*end hireme*/
 .main-text{
     width: 100%;
     text-align: center;
@@ -704,71 +768,138 @@ display: block;
 /*professional*/
 
 .professional{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: var(se);
-
-}
-.box{
-    position: relative;
-    margin: 10px 0;
-    flex: 1 1 15rem;
-}
-.box .text{
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
-   
-
-}
-
-.box .text big{
-    font: 400;
-    letter-spacing: 1px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.box .text small{
-    display: block;
-    font-weight: 600;
-}
-.circle{
     width: 100%;
-    height: 120px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #fdfdfd;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+   
+}
+
+.professional .box{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
     position: relative;
 }
 
-.points{
-    width: 2px;
-    height: 10px;
-    background-color: var(--bg-color);
+.professional .box svg{
     position: absolute;
-    border-radius: 3px;
-    transform: rotate(calc(var(--i)*var(--rot)))translateY(-45px);
-    animation: glow 0.04s linear forwards;
-    animation-delay: calc(var(--i)0.05s);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
 }
 
-.points .marked{
-    animation: glow 0.04s linear forwards;
-    animation-delay: calc(var(--i)0.05s);
+.professional .box .progress-bar{
+    stroke-width: 10;
+    stroke: #060606;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: var(--hover-color);
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{
+    animation: animate-path1 1s 1s linear forwards;
+}
+.path-2{
+    animation: animate-path2 1s 1s linear forwards;
+}
+.path-3{
+    animation: animate-path3 1s 1s linear forwards;
+}
+.path-4{
+    animation: animate-path4 1s 1s linear forwards;
+}
+.path-5{
+    animation: animate-path5 1s 1s linear forwards;
+}
+
+.path-6{
+    animation: animate-path6 1s 1s linear forwards;
+}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+
+
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 55;
+    }
 }
 
 
 
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 70;
+    }
+}
 
 
 
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 100;
+    }
+}
 
 
+@keyframes animate-path5{
+    100%{
+        stroke-dashoffset: 55;
+    }
+}
+
+
+
+@keyframes animate-path6{
+    100%{
+        stroke-dashoffset: 250;
+    }
+}
+ .box .precentage{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 17px;
+font-weight: 500;
+animation: showtext 0.5 1s linear forwards;
+color: #bdbdbd;
+
+ }
+.progress-bar .text{
+    width: 100;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showtext 0.5 1s linear forwards;
+}
 
 /*end skill*/
 .filter-buttons{
@@ -921,11 +1052,18 @@ padding: 10px;
     text-align: center;
     position: relative;
     z-index: 10;
+  
 }
 .card-data .btn-box{
     padding-left: 45px;
 }
-
+.card-data h3{
+    color: #fdfdfd;
+}
+.card-data .card-description{
+    color: #f8f5f5;
+   
+}
 .card-img{
     width: 180px;
     margin: 0 auto;
@@ -1081,6 +1219,7 @@ padding: 10px;
     width: 250px;
    height: 320px;
     box-shadow: var(--neon-box-shadow);
+    transition: transform .4s;
 
 }
 .cards::before{
@@ -1123,7 +1262,9 @@ padding: 10px;
     color: #ffffff;
 }
 
-
+.cards:hover{
+    transform: translateY(-.7rem);
+}
 
 
 /*end volenteering*/

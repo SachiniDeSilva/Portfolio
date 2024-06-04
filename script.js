@@ -55,38 +55,6 @@ setInterval(changeText, 3000);
 
 
 
- //circle skill//
-
-// JavaScript file to generate circles with marked points based on data attributes
-// Selecting all elements with class 'circle'
-const circles = document.querySelectorAll('.circle');
-
-// Iterating over each circle element
-circles.forEach(elem => {
-    // Getting data attributes
-    var dots = elem.getAttribute("data-dots");
-    var marked = elem.getAttribute("data-percent");
-    // Calculating percentage
-    var percent = Math.floor(dots * marked / 100);
-    var points = "";
-    var rotate = 360 / dots;
-
-    // Generating points inside circle
-    for (let i = 0; i < dots; i++) {
-        points += '<div class="points" style="--i:' + i + '; --rot:' + rotate + 'deg"></div>';
-    }
-
-    // Adding points to circle element
-    elem.innerHTML = points;
-
-    // Selecting marked points
-    const pointsMarked = elem.querySelectorAll('.points');
-
-    // Marking points up to specified percentage
-    for (let i = 0; i < percent; i++) {
-        pointsMarked[i].classList.add('marked');
-    }
-});
 
 
 
