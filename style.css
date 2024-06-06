@@ -572,13 +572,13 @@ display: block;
     width: 90%;
 }
 .hire-box .btn-box{
-   
+    margin-top: 30px;
     width: auto;
     justify-content: center;
 }
 .hire-img{
     position: absolute;
-    top:226% ;
+    top:230% ;
     left: 69%;
 
     display: flex;
@@ -1055,7 +1055,8 @@ padding: 10px;
   
 }
 .card-data .btn-box{
-    padding-left: 45px;
+    margin-top: 20px;
+    padding-left: 50px;
 }
 .card-data h3{
     color: #fdfdfd;
@@ -1114,6 +1115,9 @@ padding: 10px;
 }
 .swiper-button-next {
     right: 0;
+}
+.swiper-pagination{
+    margin-top: 30px;
 }
 .swiper-pagination-bullet {
     background-color: #bdbdbd;
@@ -1465,6 +1469,9 @@ footer a i{
     .card-data{
         padding: 1rem;
     }
+    .hire-img img{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -1512,6 +1519,9 @@ footer a i{
     }
     .social-icons{
         margin-top: 2rem;
+    }
+    .hire-img img{
+        display: none;
     }
 }
 
