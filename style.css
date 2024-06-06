@@ -875,7 +875,7 @@ display: block;
 
 @keyframes animate-path6{
     100%{
-        stroke-dashoffset: 250;
+        stroke-dashoffset: 130;
     }
 }
  .box .precentage{
@@ -992,18 +992,24 @@ padding: 10px;
 .port-content a{
     background: #fff;
     border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
+    display:inline-flex;
+    justify-content: space-around;
     align-items: center;
     width: 50px;
     height: 50px;
     border: 1px solid var(--hover-color);
     outline: 2px solid #fff;
+    gap: 10px;
 }
 
 .port-content a i{
     font-size: 1.3rem;
     color: var(--secon-bg-color);
+    
+}
+.link a {
+    margin-right: 20px;
+    margin-left: 20px; /* Adjust the value as needed */
 }
 /*end portfolio*/
 
