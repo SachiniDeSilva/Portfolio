@@ -236,6 +236,10 @@ ScrollReveal().reveal('.portfolio-gallery',{interval:300,origin:'bottom'});
 
 ScrollReveal().reveal('.cards-container',{interval:100,origin:'bottom'});
 
-ScrollReveal().reveal('.btn-box formBtn',{interval:100,origin:'left'});
-ScrollReveal().reveal('form ',{interval:100,origin:'left'});
+
+ScrollReveal().reveal('.name',{interval:100,origin:'left'});
+ScrollReveal().reveal('.email',{interval:100,origin:'right'});
+ScrollReveal().reveal('.number',{interval:100,origin:'left'});
+ScrollReveal().reveal('.message',{interval:100,origin:'right'});
+ScrollReveal().reveal('.btn-box formBtn button',{interval:100,origin:'left'});
 
