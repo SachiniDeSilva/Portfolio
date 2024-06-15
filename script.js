@@ -192,6 +192,50 @@ window.onclick = (event) => {
 
 
 
+ScrollReveal({
+    reset:true,
+    distance:'80px',
+    duration:2500,
+    delay:400
+});
+
+ScrollReveal().reveal('.home-content h1',{delay:100,origin:'left'});
+ScrollReveal().reveal('.chenge-text',{delay:100,origin:'left'});
+ScrollReveal().reveal('.home-content p',{delay:100,origin:'left'});
+ScrollReveal().reveal('.info-box',{delay:100,origin:'left'});
+ScrollReveal().reveal('.home-content .btn-box',{delay:100,origin:'left'});
+ScrollReveal().reveal('.social-icons',{delay:200,origin:'left'});
+ScrollReveal().reveal('.home-image',{delay:100,origin:'right'});
 
 
+ScrollReveal().reveal('.section-services',{interval:200,origin:'bottom'});
+
+ScrollReveal().reveal('.main-text',{origin:'top'});
+
+ScrollReveal().reveal('.new',{origin:'top'});
+
+ScrollReveal().reveal('.img-about',{interval:100,origin:'bottom'});
+
+ScrollReveal().reveal('.about-content h3 ',{interval:200,origin:'bottom'});
+ScrollReveal().reveal('.about-content p  ',{interval:200,origin:'bottom'});
+ScrollReveal().reveal(' .about-content .readmore ',{interval:200,origin:'bottom'});
+ScrollReveal().reveal(' .about-content .btn',{interval:200,origin:'bottom'});
+
+ScrollReveal().reveal('.hire-box',{interval:100,origin:'left'});
+ScrollReveal().reveal('.hire-img',{interval:200,origin:'right'});
+
+ScrollReveal().reveal('.skill-left h3',{interval:100,origin:'left'});
+ScrollReveal().reveal('.skill-bar',{interval:200,origin:'left'});
+
+ScrollReveal().reveal('.skill-right',{interval:100,origin:'right'});
+ScrollReveal().reveal('.professional',{interval:100,origin:'right'});
+
+
+ScrollReveal().reveal('.filter-buttons',{interval:100,origin:'bottom'});
+ScrollReveal().reveal('.portfolio-gallery',{interval:300,origin:'bottom'});
+
+ScrollReveal().reveal('.cards-container',{interval:100,origin:'bottom'});
+
+ScrollReveal().reveal('.btn-box formBtn',{interval:100,origin:'left'});
+ScrollReveal().reveal('form ',{interval:100,origin:'left'});
 
