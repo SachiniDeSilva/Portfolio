@@ -234,7 +234,7 @@ ScrollReveal().reveal('.professional',{interval:100,origin:'right'});
 ScrollReveal().reveal('.filter-buttons',{interval:100,origin:'bottom'});
 ScrollReveal().reveal('.portfolio-gallery',{interval:300,origin:'bottom'});
 
-ScrollReveal().reveal('.cards-container',{interval:100,origin:'bottom'});
+ScrollReveal().reveal('.cards-container',{interval:50,origin:'bottom'});
 
 
 ScrollReveal().reveal('.name',{interval:100,origin:'left'});
