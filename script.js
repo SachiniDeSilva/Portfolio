@@ -64,27 +64,28 @@ setInterval(changeText, 3000);
 
  //active menu
 
-// JavaScript file to handle active menu item based on scroll position
-// Selecting menu items and sections
-let menuLi = document.querySelectorAll('header ul li a');
-let sections = document.querySelectorAll('section');
-
-// Function to set active menu item
-function setActiveMenu() {
-    let len = sections.length;
-    while (--len && window.scrollY + 97 < sections[len].offsetTop) {} // Finding the section in view
-    // Removing active class from all menu items
-    menuLi.forEach(item => item.classList.remove("active"));
-    // Adding active class to the corresponding menu item
-    menuLi[len].classList.add("active");
-}
-
-// Initial call to set active menu item
-setActiveMenu();
-
-// Adding event listener for scroll to update active menu item
-window.addEventListener("scroll", setActiveMenu);
-
+ let menuLi = document.querySelectorAll('header ul li a');
+ let sections = document.querySelectorAll('section');
+ 
+ // Function to set active menu item
+ function setActiveMenu() {
+     let len = sections.length;
+     
+     // Loop to find the current section in view
+     while (--len && window.scrollY + window.innerHeight * 0.1 < sections[len].offsetTop) {}
+     
+     // Removing active class from all menu items
+     menuLi.forEach(item => item.classList.remove("active"));
+     
+     // Adding active class to the corresponding menu item
+     menuLi[len].classList.add("active");
+ }
+ 
+ // Initial call to set active menu item
+ setActiveMenu();
+ 
+ // Adding event listener for scroll to update active menu item
+ window.addEventListener("scroll", setActiveMenu);
 /*sticky navbar*/
 
 
