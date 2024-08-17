@@ -226,7 +226,7 @@ ScrollReveal().reveal('.hire-box',{interval:100,origin:'left'});
 ScrollReveal().reveal('.hire-img',{interval:200,origin:'right'});
 
 ScrollReveal().reveal('.skill-left h3',{interval:100,origin:'left'});
-ScrollReveal().reveal('.skill-bar',{interval:200,origin:'left'});
+ScrollReveal().reveal('.skills_box',{interval:200,origin:'bottom'});
 
 ScrollReveal().reveal('.skill-right',{interval:100,origin:'right'});
 ScrollReveal().reveal('.professional',{interval:100,origin:'right'});

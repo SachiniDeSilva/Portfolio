@@ -685,6 +685,7 @@ display: block;
 }
 .skills_box {
     text-align: center; /* Center the icon and name text */
+    transition: all 0.3s ease; 
 }
 
 
@@ -711,6 +712,16 @@ display: block;
     justify-items: center; /* Center icons horizontally */
     align-items: center; /* Center icons vertically */
 }
+.skills_content{
+    transition: all .5s ease;
+}
+.skills_content:hover{
+ 
+   transform: scale(1.1);
+ 
+   
+}
+
 /*professional*/
 
 .professional{
