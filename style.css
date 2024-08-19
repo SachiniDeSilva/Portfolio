@@ -578,9 +578,8 @@ display: block;
 }
 .hire-img{
     position: absolute;
-    top:230% ;
+    top:223% ;
     left: 69%;
-
     display: flex;
     justify-content: right;
     align-items: right;
@@ -597,7 +596,7 @@ display: block;
 /*end hireme*/
 
 .service_head{
-    padding-top: 10rem;
+    padding-top: 7rem;
 }
 .main-text{
     width: 100%;
