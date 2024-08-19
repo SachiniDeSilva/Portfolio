@@ -595,6 +595,10 @@ display: block;
 }
 
 /*end hireme*/
+
+.service_head{
+    padding-top: 10rem;
+}
 .main-text{
     width: 100%;
     text-align: center;
@@ -707,10 +711,10 @@ display: block;
 
 .skill-left {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Create 5 equal columns */
-    gap: 20px; /* Add spacing between the icons */
-    justify-items: center; /* Center icons horizontally */
-    align-items: center; /* Center icons vertically */
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    align-items: center; 
 }
 .skills_content{
     transition: all .5s ease;
