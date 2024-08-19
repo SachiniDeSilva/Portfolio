@@ -479,6 +479,9 @@ filter: blur(75px);
     margin-bottom:1.5rem ;
     
 }
+.about-content{
+    margin-top: 7px ;
+}
 
 .info-about1,
 .info-about2,
@@ -578,7 +581,7 @@ display: block;
 }
 .hire-img{
     position: absolute;
-    top:223% ;
+    top:230% ;
     left: 69%;
     display: flex;
     justify-content: right;
